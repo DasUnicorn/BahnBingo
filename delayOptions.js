@@ -76,5 +76,7 @@ const delayOptions = [
   "Toilette defekt",
   "Klimaanlage ausgefallen",
   "Verzögerungen im Betriebsablauf",
-  "Verfahren",
+  "Auf falsche Strecke geleitet.",
+  "Umgeleitet",
+  "Zu kurzer Bahnsteig",
 ];
