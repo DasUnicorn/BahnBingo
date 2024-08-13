@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <script defer src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+    <title>Bahn-Bingo</title>
+</head>
+
+<body>
+    <h1><span class="highlight">Bahn</span>-Bingo</h1>
+    <p>Weil eine Bahnreise in Deutschland doch erst von ihren Verspätungen lebt.</p>
+    <div class="row">
+        <button onclick="setUpBingo()" class="button">Neues Bingo generieren</button>
+        <button onclick="window.print()" class="button">Download Bingo als PDF</button>
+    </div>
+
+    <div id="bingo-container"></div>
+</body>
+
+</html>

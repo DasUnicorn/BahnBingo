@@ -1,0 +1,113 @@
+/* Custom Values */
+:root {
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-button: #ea0116;
+  --color-highlight: #ea0116;
+  --color-success: #63a615;
+
+  --font-size-small: 1rem;
+  --font-size-medium: 1.5em;
+  --font-size-large: 3em;
+  --font-size-xxlarge: 4em;
+  --font-size-huge: 7em;
+}
+
+/* Set defaults */
+
+body {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Fira Regular";
+  src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Bold";
+  src: url("../fonts/Fira_Sans/FiraSans-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo Black";
+  src: url("../fonts/Archivo_Black/ArchivoBlack-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Text Fonts */
+p,
+label {
+  font-family: "Fira Regular", "Courier New", monospace;
+  font-size: var(--font-size-small);
+  color: var(--color-text);
+  text-align: center;
+}
+
+a {
+  font-family: "Fira";
+}
+
+.button {
+  font-family: "Fira Bold", "Courier New", monospace;
+  margin: 10px;
+  color: var(--color-background);
+  background-color: black;
+  border: solid black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration: none; /*fallback for iOS*/
+  text-decoration: transparent;
+}
+
+/* Headings */
+
+h1,
+h2 {
+  font-family: "Archivo Black", Times, serif;
+  font-size: var(--font-size-large);
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+}
+
+/* Text Highlight */
+
+.highlight {
+  color: var(--color-highlight);
+  border: solid #000000;
+  background-color: var(--color-background);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.box {
+  display: flex;
+  outline: 2px solid black;
+  padding: 2px;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-text {
+  padding: 10px 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
