@@ -76,8 +76,8 @@ const delayOptions = [
   "Toilette defekt",
   "Klimaanlage ausgefallen",
   "Verzögerungen im Betriebsablauf",
-  "Auf falsche Strecke geleitet.",
-  "Umgeleitet",
+  "Auf falsche Strecke geleitet",
+  "Umleitung",
   "Zu kurzer Bahnsteig",
 ];
 
@@ -86,15 +86,14 @@ function getRandomInt(max) {
 }
 
 function getNumberOfRandomReasons(number) {
-  var currentReasonList = delayOptions;
+  var currentReasonList = JSON.parse(JSON.stringify(delayOptions));
   var resultList = [];
   for (let i = 0; i < number; i++) {
-    var randomInt = getRandomInt(delayOptions.length);
+    var randomInt = getRandomInt(delayOptions.length - i);
     var randomReason = currentReasonList[randomInt];
     resultList.push(randomReason);
     currentReasonList.splice(randomInt, 1);
   }
-  console.log(resultList);
   return resultList;
 }
 
