@@ -13,14 +13,21 @@
 </head>
 
 <body>
-    <h1><span class="highlight">Bahn</span>-Bingo</h1>
-    <p>Weil eine Bahnreise in Deutschland doch erst von ihren Verspätungen lebt.</p>
-    <div class="row">
-        <button onclick="setUpBingo()" class="button">Neues Bingo generieren</button>
-        <button onclick="window.print()" class="button">Download Bingo als PDF</button>
-    </div>
+    <div class="main">
+        <h1><span class="highlight">Bahn</span>Bingo</h1>
+        <p>Weil eine Bahnreise in Deutschland doch erst von ihren Verspätungen lebt.</p>
+        <div class="row">
+            <button onclick="setUpBingo()" class="button">Neues Bingo</button>
+            <button onclick="window.print()" class="button">Download PDF</button>
+        </div>
 
-    <div id="bingo-container"></div>
+        <div class="container">
+            <div id="bingo-container" class="bingo-board"></div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/DasUnicorn/BahnBingo">Code</a>
+    </footer>
 </body>
 
 </html>

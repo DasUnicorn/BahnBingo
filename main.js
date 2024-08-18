@@ -76,7 +76,9 @@ const delayOptions = [
   "Toilette defekt",
   "Klimaanlage ausgefallen",
   "Verzögerungen im Betriebsablauf",
-  "Verfahren",
+  "Auf falsche Strecke geleitet.",
+  "Umgeleitet",
+  "Zu kurzer Bahnsteig",
 ];
 
 function getRandomInt(max) {
@@ -105,19 +107,21 @@ function setUpBingo() {
 
   const bingoFields = getNumberOfRandomReasons(16);
 
-  for (let i = 0; i < 16; i++) {
-    if (i % 4 === 0) {
-      var rowDiv = document.createElement("div");
-      rowDiv.classList.add("row");
-      bingoContainer.appendChild(rowDiv);
+  const table = document.createElement("table");
+  bingoContainer.appendChild(table);
+
+  for (let i = 0; i < 4; i++) {
+    const row = document.createElement("tr");
+
+    for (let j = 0; j < 4; j++) {
+      const cell = document.createElement("td");
+      const p = document.createElement("p");
+      p.textContent = bingoFields[i * 4 + j];
+      p.classList.add("box-text");
+      cell.appendChild(p);
+      row.appendChild(cell);
     }
 
-    var boxDiv = document.createElement("div");
-    boxDiv.classList.add("box");
-    var p = document.createElement("p");
-    p.textContent = bingoFields[i];
-    p.classList.add("box-text");
-    boxDiv.appendChild(p);
-    rowDiv.appendChild(boxDiv);
+    table.appendChild(row);
   }
 }

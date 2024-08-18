@@ -18,6 +18,7 @@
 body {
   margin: 0px 0px 0px 0px;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   align-items: center;
 }
@@ -52,11 +53,13 @@ label {
 }
 
 a {
-  font-family: "Fira";
+  font-family: "Fira Regular", "Courier New", monospace;
+  color: var(--color-text);
 }
 
 .button {
-  font-family: "Fira Bold", "Courier New", monospace;
+  font-family: "Fira Regular", "Courier New", monospace;
+  font-size: var(--font-size-small);
   margin: 10px;
   color: var(--color-background);
   background-color: black;
@@ -83,6 +86,13 @@ h2 {
   font-size: var(--font-size-medium);
 }
 
+@media (max-width: 620px) {
+  h1 {
+    font-size: var(--font-size-medium);
+    padding-top: 10px;
+  }
+}
+
 /* Text Highlight */
 
 .highlight {
@@ -93,21 +103,61 @@ h2 {
   padding: 10px;
 }
 
-.box {
+footer {
+  font-family: "Fira Regular", "Courier New", monospace;
+  font-size: var(--font-size-small);
+  color: var(--color-text);
+  padding: 12px;
+}
+
+.main {
   display: flex;
-  outline: 2px solid black;
-  padding: 2px;
-  height: 150px;
-  width: 150px;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.box-text {
-  padding: 10px 5px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  height: 150px;
+  width: 150px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
+}
+
+.bingo-board {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 620px) {
+  td,
+  th {
+    height: 25vw;
+    width: 25vw;
+    padding: 5px;
+  }
+
+  .box-text {
+    font-size: x-small;
+  }
 }
