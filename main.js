@@ -85,17 +85,14 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-function getRandomReason() {
-  var randomInt = getRandomInt(delayOptions.length);
-  console.log(delayOptions[randomInt]);
-  return delayOptions[randomInt];
-}
-
 function getNumberOfRandomReasons(number) {
+  var currentReasonList = delayOptions;
   var resultList = [];
   for (let i = 0; i < number; i++) {
-    var randomReason = getRandomReason();
+    var randomInt = getRandomInt(delayOptions.length);
+    var randomReason = currentReasonList[randomInt];
     resultList.push(randomReason);
+    currentReasonList.splice(randomInt, 1);
   }
   console.log(resultList);
   return resultList;
