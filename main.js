@@ -79,6 +79,8 @@ const delayOptions = [
   "Auf falsche Strecke geleitet",
   "Umleitung",
   "Zu kurzer Bahnsteig",
+  "F-Gerät",
+  "Rauchen in der Toilette"
 ];
 
 function getRandomInt(max) {
