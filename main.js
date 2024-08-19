@@ -3,7 +3,7 @@ const delayOptions = [
   "Feuerwehreinsatz auf der Strecke",
   "ärztliche Versorgung eines Fahrgastes",
   "unbefugtes Ziehen der Notbremse",
-  "unbefugte Personen auf der Strecke",
+  "Personen im Gleis",
   "Notarzteinsatz auf der Strecke",
   "Streikauswirkungen",
   "Tiere auf der Strecke",
