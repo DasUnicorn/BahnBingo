@@ -103,6 +103,7 @@ h2 {
   background-color: var(--color-background);
   border-radius: 20px;
   padding: 10px;
+  margin-right: 10px;
 }
 
 footer {
