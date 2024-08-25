@@ -163,6 +163,11 @@ th {
   }
 
   .box-text {
+    font-size: xx-small;
+    margin: 1px;
+  }
+
+  .button {
     font-size: x-small;
   }
 }

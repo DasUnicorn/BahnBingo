@@ -101,15 +101,15 @@ function setUpBingo() {
   const bingoContainer = document.querySelector("#bingo-container");
   bingoContainer.innerHTML = ""; // Clear any previous content
 
-  const bingoFields = getNumberOfRandomReasons(16);
+  const bingoFields = getNumberOfRandomReasons(25);
 
   const table = document.createElement("table");
   bingoContainer.appendChild(table);
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     const row = document.createElement("tr");
 
-    for (let j = 0; j < 4; j++) {
+    for (let j = 0; j < 5; j++) {
       const cell = document.createElement("td");
       const p = document.createElement("p");
       p.textContent = bingoFields[i * 4 + j];
