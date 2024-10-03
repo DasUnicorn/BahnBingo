@@ -117,8 +117,9 @@ function setUpBingo() {
         p.classList.add("joker-text");
         cell.classList.add("joker");
       } else {
-        p.innerHTML = bingoFields[i * 4 + j];
+        p.innerHTML = bingoFields[i * 5 + j];
       }
+      console.log(bingoFields);
       p.classList.add("box-text");
       cell.appendChild(p);
       row.appendChild(cell);
