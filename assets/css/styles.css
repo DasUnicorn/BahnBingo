@@ -59,6 +59,22 @@ a {
   color: var(--color-text);
 }
 
+button,
+input,
+select,
+textarea {
+  font-family: "Fira Regular", "Courier New", monospace;
+  font-size: 100%;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+select {
+  border: 2px solid --color-background;
+}
+
 .button {
   font-family: "Fira Regular", "Courier New", monospace;
   font-size: var(--font-size-small);
@@ -77,14 +93,19 @@ a {
 /* Headings */
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Archivo Black", Times, serif;
   font-size: var(--font-size-large);
-  text-transform: uppercase;
   color: var(--color-text);
 }
 
-h2 {
+h1 {
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
   font-size: var(--font-size-medium);
 }
 
@@ -128,6 +149,10 @@ footer {
   width: 100%;
   padding: 10px 0px;
   max-width: 770px;
+}
+
+.selection-container {
+  width: 100%;
 }
 
 table {

@@ -10,65 +10,19 @@
     <title>Bahn-Bingo</title>
 </head>
 
-<body>
+<body onload="setUpCustomBingoSelection()">
     <div class="main">
         <h1><span class="highlight">Bahn</span>Bingo</h1>
 
         <div class="container">
             <h2>Select your Bingo fields:</h2>
-            <div id="bingo-selection">
-                <form method="post" action="custom-bingo.html">
-                    <div>
-                        <select>
-                            <option>Polizeieinsatz</option>
-                            <option>Feuerwehreinsatz auf der Strecke</option>
-                            <option>ärztliche Versorgung eines Fahrgastes"</option>
-                        </select>
-                        <select>
-                            <option>Polizeieinsatz</option>
-                            <option>Feuerwehreinsatz auf der Strecke</option>
-                            <option>ärztliche Versorgung eines Fahrgastes"</option>
-                        </select>
-                        <select>
-                            <option>Polizeieinsatz</option>
-                            <option>Feuerwehreinsatz auf der Strecke</option>
-                            <option>ärztliche Versorgung eines Fahrgastes"</option>
-                        </select>
-                        <select>
-                            <option>Polizeieinsatz</option>
-                            <option>Feuerwehreinsatz auf der Strecke</option>
-                            <option>ärztliche Versorgung eines Fahrgastes"</option>
-                        </select>
-                        <select>
-                            <option>Polizeieinsatz</option>
-                            <option>Feuerwehreinsatz auf der Strecke</option>
-                            <option>ärztliche Versorgung eines Fahrgastes"</option>
-                        </select>
-                        <select>
-                            <option>Polizeieinsatz</option>
-                            <option>Feuerwehreinsatz auf der Strecke</option>
-                            <option>ärztliche Versorgung eines Fahrgastes"</option>
-                        </select>
-                        <select>
-                            <option>Polizeieinsatz</option>
-                            <option>Feuerwehreinsatz auf der Strecke</option>
-                            <option>ärztliche Versorgung eines Fahrgastes"</option>
-                        </select>
-                        <select>
-                            <option>Polizeieinsatz</option>
-                            <option>Feuerwehreinsatz auf der Strecke</option>
-                            <option>ärztliche Versorgung eines Fahrgastes"</option>
-                        </select>
-                        <select>
-                            <option>Polizeieinsatz</option>
-                            <option>Feuerwehreinsatz auf der Strecke</option>
-                            <option>ärztliche Versorgung eines Fahrgastes"</option>
-                        </select>
+            <div class="selection-container">
+                <form>
+                    <div id="bingo-selection">
                     </div>
-                    <button type="submit" class="button">Bingo erstellen</button>
+                    <input type="submit" value="Bingo erstellen" class="button" />
                 </form>
             </div>
-            <div id="bingo-container" class="bingo-board"></div>
         </div>
     </div>
     <footer>

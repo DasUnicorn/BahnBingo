@@ -133,19 +133,32 @@ function setUpCustomBingoSelection() {
   const numberOfBoxes = 25;
   const selectContainer = document.querySelector("#bingo-selection");
   selectContainer.innerHTML = ""; // Clear any previous content
+  let currentRow = 0;
+  let currentSelection = 0;
 
-  for (let i = 0; i < numberOfBoxes; i++) {
-    const select = document.createElement("select");
-    select.id = "bingoSelect";
+  for (n = 0; n < 5; n++) {
+    currentRow++;
+    const h3 = document.createElement("h3");
+    h3.innerHTML = "Reihe " + currentRow;
+    selectContainer.appendChild(h3);
+    for (i = 0; i < 5; i++) {
+      const select = document.createElement("select");
+      select.id = "selection" + currentSelection;
+      currentSelection++;
 
-    //Set Select-options
-    for (var x = 0; x < delayOptions.length; x++) {
-      var option = document.createElement("option");
-      option.value = delayOptions[x];
-      option.text = delayOptions[x];
-      select.appendChild(option);
+      //Set Select-options
+      for (var x = 0; x < delayOptions.length; x++) {
+        var option = document.createElement("option");
+        option.value = delayOptions[x];
+        option.innerHTML = delayOptions[x];
+        select.appendChild(option);
+      }
+
+      selectContainer.appendChild(select);
+
+      if (n == 2 && i == 3) {
+        break;
+      }
     }
-
-    selectContainer.appendChild(select);
   }
 }
