@@ -1,84 +1,84 @@
 const delayOptions = [
-  "Polizeieinsatz",
-  "Feuerwehreinsatz auf der Strecke",
-  "ärztliche Versorgung eines Fahrgastes",
-  "unbefugtes Ziehen der Notbremse",
+  "Polizei&shy;einsatz",
+  "Feuer&shy;wehr&shy;einsatz auf der Strecke",
+  "ärzt&shy;liche Versorgung eines Fahr&shy;gastes",
+  "unbefugtes Ziehen der Not&shy;bremse",
   "Personen im Gleis",
-  "Notarzteinsatz auf der Strecke",
-  "Streikauswirkungen",
+  "Notarzt&shy;einsatz auf der Strecke",
+  "Streik&shy;auswirkungen",
   "Tiere auf der Strecke",
   "Unwetter",
   "Warten auf ein verspätetes Schiff",
-  "Pass- und Zollkontrolle",
+  "Pass- und Zoll&shy;kontrolle",
   "technischer Defekt am Bahnhof",
-  "Beeinträchtigung durch Vandalismus",
-  "Entschärfung einer Fliegerbombe",
+  "Beein&shy;trächtigung durch Vanda&shy;lismus",
+  "Ent&shy;schärfung einer Flieger&shy;bombe",
   "Beschädigung einer Brücke",
   "umgestürzter Baum auf der Strecke",
-  "Unfall an einem Bahnübergang",
-  "Warten auf Anschlussreisende",
-  "Witterungsbedingte Beeinträchtigungen",
+  "Unfall an einem Bahn&shy;übergang",
+  "Warten auf An&shy;schluss&shy;reisende",
+  "Witterungs&shy;bedingte Be&shy;einträchti&shy;gungen",
   "Verspätung im Ausland",
-  "Bereitstellung weiterer Wagen",
+  "Bereit&shy;stellung weiterer Wagen",
   "Abhängen von Wagen",
-  "Gegenstände auf der Strecke",
-  "Ersatzverkehr mit Bus ist eingerichtet",
-  "Bauarbeiten",
-  "Unterstützung beim Ein- und Ausstieg",
-  "Reparatur an der Oberleitung",
+  "Gegen&shy;stände auf der Strecke",
+  "Ersatz&shy;verkehr mit Bus ist ein&shy;gerichtet",
+  "Bau&shy;arbeiten",
+  "Unter&shy;stützung beim Ein- und Aus&shy;stieg",
+  "Reparatur an der Ober&shy;leitung",
   "Reparatur an einem Signal",
-  "Streckensperrung ",
+  "Strecken&shy;sperrung ",
   "Reparatur am Zug",
   "Reparatur an der Strecke",
-  "defektes Stellwerk",
-  "technischer Defekt an einem Bahnübergang",
-  "vorübergehend verminderte Geschwindigkeit auf der Strecke",
-  "Verspätung eines vorausfahrenden Zuges",
-  "Warten auf einen entgegenkommenden Zug",
+  "defektes Stell&shy;werk",
+  "tech&shy;nischer Defekt an einem Bahn&shy;übergang",
+  "vorüber&shy;gehend verminderte Ge&shy;schwindig&shy;keit auf der Strecke",
+  "Verspätung eines voraus&shy;fahrenden Zuges",
+  "Warten auf einen ent&shy;gegen&shy;kommenden Zug",
   "Vorfahrt eines anderen Zuges",
-  "verspätete Bereitstellung des Zuges",
+  "verspätete Bereit&shy;stellung des Zuges",
   "Verspätung aus vorheriger Fahrt",
-  "kurzfristiger Personalausfall",
-  "kurzfristige Erkrankung von Personal",
+  "kurz&shy;fristiger Personal&shy;ausfall",
+  "kurz&shy;fristige Erkrankung von Personal",
   "verspätetes Personal aus vorheriger Fahrt",
   "Streik",
-  "Unwetterauswirkungen",
-  "Verfügbarkeit der Gleise derzeit eingeschränkt",
+  "Unwetter&shy;aus&shy;wirkungen",
+  "Verfügbar&shy;keit der Gleise derzeit ein&shy;geschränkt",
   "technischer Defekt an einem anderen Zug",
-  "Warten auf Anschlussreisende",
+  "Warten auf Anschluss&shy;reisende",
   "zusätzlicher Halt zum Ein- und Ausstieg",
   "Umleitung des Zuges",
   "Schnee und Eis",
-  "Witterungsbedingt verminderte Geschwindigkeit",
+  "Witterungs&shy;bedingt verminderte Geschwindig&shy;keit",
   "Defekte Tür",
   "Behobener technischer Defekt am Zug",
-  "Technische Untersuchung am Zug",
+  "Technische Unter&shy;suchung am Zug",
   "Reparatur an der Weiche",
   "Erdrutsch",
   "Hochwasser",
   "Behördliche Maßnahme",
-  "hohes Fahrgastaufkommen verlängert Ein- und Ausstieg",
+  "hohes Fahrgast&shy;aufkommen verlängert Ein- und Ausstieg",
   "Zug verkehrt mit verminderter Geschwindigkeit",
   "WLAN nicht verfügbar",
-  "Info-/Entertainment nicht verfügbar",
+  "Info-/&shy;Entertainment nicht verfügbar",
   "1. Klasse fehlt",
-  "Mehrzweckabteil fehlt",
+  "Mehrzweck&shy;abteil fehlt",
   "andere Reihenfolge der Wagen",
-  "defekte fahrzeuggebundene Einstiegshilfe",
+  "defekte fahr&shy;zeug&shy;gebundene Einstiegs&shy;hilfe",
   "Zug verkehrt richtig gereiht",
   "ein Wagen fehlt",
-  "defekte Reservierungsanzeige",
+  "defekte Reservierungs&shy;anzeige",
   "kein gastronomisches Angebot",
-  "Fahrradmitnahme nicht möglich",
-  "Eingeschränkte Fahrradbeförderung",
-  "behindertengerechte Einrichtung fehlt",
+  "Fahrrad&shy;mitnahme nicht möglich",
+  "Eingeschränkte Fahrrad&shy;beförderung",
+  "behinderten&shy;gerechte Einrichtung fehlt",
   "Universal-WC fehlt",
   "Toilette defekt",
   "Klimaanlage ausgefallen",
-  "Verzögerungen im Betriebsablauf",
+  "Verzögerungen im Betriebs&shy;ablauf",
   "Auf falsche Strecke geleitet",
   "Umleitung",
-  "Zu kurzer Bahnsteig",
+  "Zu kurzer Bahn&shy;steig",
 ];
 
 function getRandomInt(max) {
@@ -112,12 +112,39 @@ function setUpBingo() {
     for (let j = 0; j < 5; j++) {
       const cell = document.createElement("td");
       const p = document.createElement("p");
-      p.textContent = bingoFields[i * 4 + j];
+      if (i == 2 && j == 2) {
+        p.innerHTML = "JOKER";
+        p.classList.add("joker-text");
+        cell.classList.add("joker");
+      } else {
+        p.innerHTML = bingoFields[i * 4 + j];
+      }
       p.classList.add("box-text");
       cell.appendChild(p);
       row.appendChild(cell);
     }
 
     table.appendChild(row);
+  }
+}
+
+function setUpCustomBingoSelection() {
+  const numberOfBoxes = 25;
+  const selectContainer = document.querySelector("#bingo-selection");
+  selectContainer.innerHTML = ""; // Clear any previous content
+
+  for (let i = 0; i < numberOfBoxes; i++) {
+    const select = document.createElement("select");
+    select.id = "bingoSelect";
+
+    //Set Select-options
+    for (var x = 0; x < delayOptions.length; x++) {
+      var option = document.createElement("option");
+      option.value = delayOptions[x];
+      option.text = delayOptions[x];
+      select.appendChild(option);
+    }
+
+    selectContainer.appendChild(select);
   }
 }

@@ -124,6 +124,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   padding: 10px 0px;
   max-width: 770px;
@@ -151,6 +152,15 @@ th {
 
 .bingo-board {
   width: 100%;
+}
+
+.joker {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+.joker-text {
+  color: var(--color-background);
 }
 
 @media (max-width: 620px) {
