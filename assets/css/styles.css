@@ -184,6 +184,11 @@ th {
   color: var(--color-background);
 }
 
+/* Highlights after click */
+.selected {
+  background-color: #ffb2b2;
+}
+
 @media (max-width: 864px) {
   .bingo-board {
     width: 100%;

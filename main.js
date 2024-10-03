@@ -106,6 +106,8 @@ function setUpBingo() {
   const table = document.createElement("table");
   bingoContainer.appendChild(table);
 
+  let currentFieldNumber = 0;
+
   for (let i = 0; i < 5; i++) {
     const row = document.createElement("tr");
 
@@ -117,12 +119,14 @@ function setUpBingo() {
         p.classList.add("joker-text");
         cell.classList.add("joker");
       } else {
+        cell.id = "field" + currentFieldNumber;
+        p.id = "text" + currentFieldNumber;
         p.innerHTML = bingoFields[i * 5 + j];
       }
-      console.log(bingoFields);
       p.classList.add("box-text");
       cell.appendChild(p);
       row.appendChild(cell);
+      currentFieldNumber++;
     }
 
     table.appendChild(row);
@@ -162,3 +166,25 @@ function setUpCustomBingoSelection() {
     }
   }
 }
+
+// On Click behaviour
+
+document.addEventListener("DOMContentLoaded", function () {
+  var delayInMilliseconds = 1000; //1 second
+
+  setTimeout(function () {
+    document.addEventListener("click", (event) => {
+      const target = event.target;
+
+      // If the target's id starts with 'field', toggle target
+      if (target.id.startsWith("field")) {
+        target.classList.toggle("selected");
+      }
+
+      // If the target's id starts with 'text', toggle parent
+      if (target.id.startsWith("text")) {
+        target.parentElement.classList.toggle("selected");
+      }
+    });
+  }, delayInMilliseconds);
+});
