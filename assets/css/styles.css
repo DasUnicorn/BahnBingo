@@ -150,10 +150,6 @@ th {
   flex-direction: row;
 }
 
-.bingo-board {
-  width: 100%;
-}
-
 .joker {
   background-color: var(--color-text);
   color: var(--color-background);
@@ -163,7 +159,11 @@ th {
   color: var(--color-background);
 }
 
-@media (max-width: 620px) {
+@media (max-width: 864px) {
+  .bingo-board {
+    width: 100%;
+  }
+
   td,
   th {
     height: 25vw;
@@ -171,7 +171,9 @@ th {
     padding: 0px;
     overflow-wrap: break-word;
   }
+}
 
+@media (max-width: 620px) {
   .box-text {
     font-size: xx-small;
     margin: 1px;
